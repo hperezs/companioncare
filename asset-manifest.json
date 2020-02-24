@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/companioncare/static/css/main.bb418039.chunk.css",
+    "main.js": "/companioncare/static/js/main.b63c7356.chunk.js",
+    "main.js.map": "/companioncare/static/js/main.b63c7356.chunk.js.map",
+    "runtime-main.js": "/companioncare/static/js/runtime-main.ed475a3c.js",
+    "runtime-main.js.map": "/companioncare/static/js/runtime-main.ed475a3c.js.map",
+    "static/css/2.67123b20.chunk.css": "/companioncare/static/css/2.67123b20.chunk.css",
+    "static/js/2.5dd383dd.chunk.js": "/companioncare/static/js/2.5dd383dd.chunk.js",
+    "static/js/2.5dd383dd.chunk.js.map": "/companioncare/static/js/2.5dd383dd.chunk.js.map",
+    "index.html": "/companioncare/index.html",
+    "precache-manifest.5fa60011ae4272497c5cdf72beacd5da.js": "/companioncare/precache-manifest.5fa60011ae4272497c5cdf72beacd5da.js",
+    "service-worker.js": "/companioncare/service-worker.js",
+    "static/css/2.67123b20.chunk.css.map": "/companioncare/static/css/2.67123b20.chunk.css.map",
+    "static/css/main.bb418039.chunk.css.map": "/companioncare/static/css/main.bb418039.chunk.css.map",
+    "static/js/2.5dd383dd.chunk.js.LICENSE.txt": "/companioncare/static/js/2.5dd383dd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/companioncare/static/media/banner.005a78d7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed475a3c.js",
+    "static/css/2.67123b20.chunk.css",
+    "static/js/2.5dd383dd.chunk.js",
+    "static/css/main.bb418039.chunk.css",
+    "static/js/main.b63c7356.chunk.js"
+  ]
+}
