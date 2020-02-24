@@ -1,0 +1,15 @@
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: contents;
+}
+
+.appointment-layout {
+  border-bottom: 1px dotted gray;
+}
+
+.appointment-list {
+  height: 400px;
+}

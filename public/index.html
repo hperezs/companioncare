@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +22,117 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <link href="font-awesome/css/all.css" rel="stylesheet">
+  <!--Font Awesome Icons-->
+  <title>Companion Care Clinic</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed top">
+    <a class="navbar-brand" href="#"><i class="fa fa-paw" aria-hidden="true"></i> Companion Care Clinic</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#about_dropdown"
+      aria-controls="about_dropdown" aria-expanded="false" aria-label="about us dropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="collapse navbar-collapse" id="about_dropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="navbar-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="about_dropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">About Us</a>
+          <div class="dropdown-menu" aria-labelledby="about_dropdown">
+            <a class="dropdown-item" href="#">Careers</a>
+            <a class="dropdown-item" href="#">FAQ</a>
+            <a class="dropdown-item" href="#">Our History</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#appointments">Appointments</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+    <section class="page-banner jumbotron">
+      <div class="banner-layout container text-white text-center">
+        <h1 class="display-3">Companion Care Clinic</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </section>
+
+    <article class="container" id="icon-grid">
+      <div class="row text-center justify-content-center">
+        <section class="layout-grid col-5 col-sm-6 py-3 col-md-3">
+          <i class="grid-icon fas fa-syringe fa-5x pb-2" aria-hidden="true"></i>
+          <h4 class="layout-title">Vaccinations</h4>
+          <p class="layout-text">Keep yout pet up-to-date with Preventive Care.</p>
+          <a href="#" class="grid-link btn btn-secondary btn-sm">Learn more</a>
+        </section>
+
+        <section class="layout-grid col-5 col-sm-6 py-3 col-md-3">
+          <i class="grid-icon fas fa-history fa-5x pb-2"></i>
+          <h4 class="layout-title"> Routine Care</h4>
+          <p class="layout-text">Your pet will love our care. Visit us and see!</p>
+          <a href="#" class="grid-link btn btn-secondary btn-sm">Learn more</a>
+        </section>
+
+        <section class="layout-grid col-5 col-sm-6 py-3 col-md-3">
+          <i class="grid-icon fas fa-first-aid fa-5x pb-2"></i>
+          <h4 class="layout-title">Surgery</h4>
+          <p class="layout-text">From spays and neuters, our qualified staff can help.</p>
+          <a href="#" class="grid-link btn btn-secondary btn-sm">Learn more</a>
+        </section>
+
+        <section class="layout-grid col-5 col-sm-6 py-3 col-md-3">
+          <i class="grid-icon fas fa-tooth fa-5x pb-2"></i>
+          <h4 class="layout-title">Dental</h4>
+          <p class="layout-text">Don't forget about this important part to your pet's health.</p>
+          <a href="#" class="grid-link btn btn-secondary btn-sm">Learn more</a>
+        </section>
+
+      </div>
+
+    </article>
+
+    <br><br>
+
+    <article id="appointments" class="container">
+      <div class="card-header">
+        <h3>Appointments</h3>
+      </div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.</p>
+      </div>
+      <div class="card-body" id="appointment-app"></div>
+    </article>
+
+  </main>
+
+
+
+
+  <footer class="container text-white bg-secondary py-2 mt-5">
+    <p>Hugo Perez - 2020</p>
+  </footer>
+
+</body>
+
 </html>
