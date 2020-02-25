@@ -13,12 +13,14 @@ class App extends Component {
       lastIndex: 0,
       formDisplay: false,
       aptBtnDisplay: true,
-      listDisplay: false
+      listDisplay: false,
+      queryText: ''
     }
 
     this.toggleDisplay = this.toggleDisplay.bind(this);
     this.addAppointment = this.addAppointment.bind(this);
     this.toggleList = this.toggleList.bind(this);
+    this.searchApts = this.searchApts.bind(this);
   }
 
   componentDidMount() {
@@ -61,7 +63,22 @@ class App extends Component {
     })
   }
 
+  searchApts(text){
+    this.setState({
+      queryText: text
+    })
+  }
+
   render() {
+    let filteredApts = this.state.appointments;
+    filteredApts = filteredApts.filter(eachItem => {
+      return(
+        eachItem['petName'].toLowerCase().includes(this.state.queryText.toLowerCase()) ||
+        eachItem['ownerName'].toLowerCase().includes(this.state.queryText.toLowerCase()) ||
+        eachItem['aptNotes'].toLowerCase().includes(this.state.queryText.toLowerCase())
+      )
+    })
+
     return (
       <div>
         <AddApointment
@@ -71,9 +88,10 @@ class App extends Component {
           addAppointment={this.addAppointment}
         />
         <ListAppointments
-          appointments={this.state.appointments}
+          appointments={filteredApts}
           listDisplay={this.state.listDisplay}
           toggleList={this.toggleList}
+          searchApts={this.searchApts}
         />
       </div>
     )
