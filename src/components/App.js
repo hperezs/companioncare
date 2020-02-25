@@ -24,18 +24,14 @@ class App extends Component {
   }
 
   componentDidMount() {
+    let index = 0;
     const temp_appointments = data.map(item => {
-      let temp_index = this.state.lastIndex;
-      item.aptId = temp_index;
-      temp_index = + 1;
-      console.log(item.aptId);
-      this.setState({
-        lastIndex: temp_index
-      })
+      item.aptId = index;
+      index += 1;
       return item;
     })
 
-    this.setState({ appointments: temp_appointments });
+    this.setState({ appointments: temp_appointments, lastIndex: index });
 
   }
 
