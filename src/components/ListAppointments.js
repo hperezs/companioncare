@@ -19,7 +19,7 @@ class ListAppointments extends Component {
 
                                 <div className="appointment-layout row py-3 col-12" key={item.aptId}>
 
-                                    <div className="col-6">
+                                    <div className="col-sm-12 col-md-10 col-lg-8">
                                         <div className="apt-head d-flex">
                                             <h6 className="pet-name">{item.petName}</h6>
                                             <span className="apt-date ml-auto">{item.aptDate}</span>
@@ -37,14 +37,8 @@ class ListAppointments extends Component {
                                 </div>
                             ))
                         }
-
                     </section>
                 </section>
-
-
-
-
-
             </article>
         )
     }

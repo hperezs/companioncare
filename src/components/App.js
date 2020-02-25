@@ -3,11 +3,12 @@ import '../css/App.css';
 
 import AddApointment from "./AddAppointment";
 import ListAppointments from './ListAppointments';
+import data from "./data/data.json";
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state={
+    this.state = {
       appointments: [],
       lastIndex: 0,
       formDisplay: false,
@@ -20,18 +21,20 @@ class App extends Component {
     this.toggleList = this.toggleList.bind(this);
   }
 
-  componentDidMount(){
-    fetch('./data.json')
-      .then(Response => Response.json())
-      .then(result => {
-        const temp_appointments = result.map(item => {
-          item.aptId = this.state.lastIndex;
-          this.setState({lastIndex: this.state.lastIndex + 1})
-          return item;
-        })
-
-        this.setState({appointments: temp_appointments});
+  componentDidMount() {
+    const temp_appointments = data.map(item => {
+      let temp_index = this.state.lastIndex;
+      item.aptId = temp_index;
+      temp_index = + 1;
+      console.log(item.aptId);
+      this.setState({
+        lastIndex: temp_index
       })
+      return item;
+    })
+
+    this.setState({ appointments: temp_appointments });
+
   }
 
   toggleDisplay() {
@@ -41,7 +44,7 @@ class App extends Component {
     })
   }
 
-  addAppointment(apt){
+  addAppointment(apt) {
     apt.aptId = this.state.lastIndex;
     let temp_apts = this.state.appointments;
     temp_apts.unshift(apt);
@@ -52,7 +55,7 @@ class App extends Component {
     })
   }
 
-  toggleList(){
+  toggleList() {
     this.setState({
       listDisplay: !this.state.listDisplay
     })
@@ -61,7 +64,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <AddApointment 
+        <AddApointment
           formDisplay={this.state.formDisplay}
           aptBtnDisplay={this.state.aptBtnDisplay}
           toggleDisplay={this.toggleDisplay}
