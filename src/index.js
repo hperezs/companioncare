@@ -9,6 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/umd/popper.js';
 import 'bootstrap/dist/js/bootstrap.js';
+import './jquery-code.js';
 
 ReactDOM.render(<App />, document.getElementById('appointment-app'));
 

@@ -58,7 +58,7 @@ class AddApointment extends Component {
         
         <div className={"container " + (this.props.formDisplay ? '' : 'hidden')}>
           <div className="row justify-content-center">
-            <section className="col-9 col-sm-12 col-md-10">
+            <section className="col-sm-12 col-md-10">
               <div className="card-header text-center"><h5>Please enter the required information</h5></div>
               <div className="card-body">
 

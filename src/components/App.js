@@ -80,7 +80,7 @@ class App extends Component {
     })
 
     return (
-      <div>
+      <div className="app-components justify-content-center">
         <AddApointment
           formDisplay={this.state.formDisplay}
           aptBtnDisplay={this.state.aptBtnDisplay}
