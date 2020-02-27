@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5aa0bc10e6b99a4bf926fc5dce28bd0b",
+    "revision": "a9726586d80c771156018a48cf22f742",
     "url": "/companioncare/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/companioncare/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "836ee3ef5ea2326e0f11",
+    "revision": "f43527396e7e265e90d8",
     "url": "/companioncare/static/css/main.f6e49b18.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/companioncare/static/js/2.592d53eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "836ee3ef5ea2326e0f11",
-    "url": "/companioncare/static/js/main.e95a03d3.chunk.js"
+    "revision": "f43527396e7e265e90d8",
+    "url": "/companioncare/static/js/main.5e0ab82f.chunk.js"
   },
   {
     "revision": "9af86dd53695bc642cfd",
