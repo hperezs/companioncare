@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/companioncare/static/css/main.92131442.chunk.css",
-    "main.js": "/companioncare/static/js/main.fcd11e00.chunk.js",
-    "main.js.map": "/companioncare/static/js/main.fcd11e00.chunk.js.map",
+    "main.css": "/companioncare/static/css/main.f6e49b18.chunk.css",
+    "main.js": "/companioncare/static/js/main.de1c81dc.chunk.js",
+    "main.js.map": "/companioncare/static/js/main.de1c81dc.chunk.js.map",
     "runtime-main.js": "/companioncare/static/js/runtime-main.ed475a3c.js",
     "runtime-main.js.map": "/companioncare/static/js/runtime-main.ed475a3c.js.map",
     "static/css/2.67123b20.chunk.css": "/companioncare/static/css/2.67123b20.chunk.css",
-    "static/js/2.0e3966d4.chunk.js": "/companioncare/static/js/2.0e3966d4.chunk.js",
-    "static/js/2.0e3966d4.chunk.js.map": "/companioncare/static/js/2.0e3966d4.chunk.js.map",
+    "static/js/2.592d53eb.chunk.js": "/companioncare/static/js/2.592d53eb.chunk.js",
+    "static/js/2.592d53eb.chunk.js.map": "/companioncare/static/js/2.592d53eb.chunk.js.map",
     "index.html": "/companioncare/index.html",
-    "precache-manifest.5f4ea11017f142b1a0d4d2c02c9b3711.js": "/companioncare/precache-manifest.5f4ea11017f142b1a0d4d2c02c9b3711.js",
+    "precache-manifest.b5be28270acd97709407b303283f7cc8.js": "/companioncare/precache-manifest.b5be28270acd97709407b303283f7cc8.js",
     "service-worker.js": "/companioncare/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/companioncare/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.92131442.chunk.css.map": "/companioncare/static/css/main.92131442.chunk.css.map",
-    "static/js/2.0e3966d4.chunk.js.LICENSE.txt": "/companioncare/static/js/2.0e3966d4.chunk.js.LICENSE.txt",
+    "static/css/main.f6e49b18.chunk.css.map": "/companioncare/static/css/main.f6e49b18.chunk.css.map",
+    "static/js/2.592d53eb.chunk.js.LICENSE.txt": "/companioncare/static/js/2.592d53eb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/companioncare/static/media/banner.005a78d7.jpg",
     "static/media/all.css": "/companioncare/static/media/fa-solid-900.cdfec5cf.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.ed475a3c.js",
     "static/css/2.67123b20.chunk.css",
-    "static/js/2.0e3966d4.chunk.js",
-    "static/css/main.92131442.chunk.css",
-    "static/js/main.fcd11e00.chunk.js"
+    "static/js/2.592d53eb.chunk.js",
+    "static/css/main.f6e49b18.chunk.css",
+    "static/js/main.de1c81dc.chunk.js"
   ]
 }
