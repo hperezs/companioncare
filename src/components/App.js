@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 
-import AddApointment from "./AddAppointment";
-import ListAppointments from './ListAppointments';
+import CheckIn from "./CheckIn";
+import ListAppointments from './ListCheckIns';
 import data from "./data/data.json";
 
 class App extends Component {
@@ -76,8 +76,8 @@ class App extends Component {
     })
 
     return (
-      <div className="app-components justify-content-center">
-        <AddApointment
+      <div className="app-components">
+        <CheckIn
           formDisplay={this.state.formDisplay}
           aptBtnDisplay={this.state.aptBtnDisplay}
           toggleDisplay={this.toggleDisplay}

@@ -14,8 +14,14 @@
   height: 400px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 440px){
   .search-bar{
-    width: 170px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .search-bar{
+    width: 120px;
   }
 }

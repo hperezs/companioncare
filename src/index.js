@@ -9,9 +9,9 @@ import * as serviceWorker from './serviceWorker';
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/umd/popper.js';
 import 'bootstrap/dist/js/bootstrap.js';
-import './jquery-code.js';
+import './resize';
 
-ReactDOM.render(<App />, document.getElementById('appointment-app'));
+ReactDOM.render(<App />, document.getElementById('check-in-app'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

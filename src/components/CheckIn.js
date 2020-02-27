@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
-class AddApointment extends Component {
+class CheckIn extends Component {
   constructor(){
     super();
     this.state = {
@@ -8,7 +9,7 @@ class AddApointment extends Component {
       ownerName: '',
       aptNotes: '',
       aptDate: '',
-      aptTime: ''
+      timeOffset: ''
     }
 
     this.handleChanges = this.handleChanges.bind(this);
@@ -20,8 +21,12 @@ class AddApointment extends Component {
     const value = target.value;
     const name = target.name;
 
+    const offset = $('#time-selector :selected').val();
+    console.log(offset);
+
     this.setState({
-      [name]: value
+      [name]: value,
+      timeOffset: offset
     })
 
   }
@@ -29,11 +34,21 @@ class AddApointment extends Component {
   submitAppointment(event){
     event.preventDefault();
 
+    if (this.state.aptNotes === ''){
+      this.setState({
+        aptNotes: ' ---'
+      })
+    }
+
+    var date = new Date();
+    let current_time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + date.getMinutes();
+
     let temp_apt = {
       petName: this.state.petName,
       ownerName: this.state.ownerName,
       aptNotes: this.state.aptNotes,
-      aptDate: this.state.aptDate + ' ' + this.state.aptTime,
+      aptDate: current_time,
+      timeOffset: this.state.timeOffset
     }
 
     this.props.addAppointment(temp_apt);
@@ -53,7 +68,7 @@ class AddApointment extends Component {
     return (
       <article className="add-appointment-layout">
         <button className={"layout-dropdown btn btn-primary btn-lg " + (this.props.aptBtnDisplay ? '' : 'hidden')} onClick={this.props.toggleDisplay}>
-          <h5><i className="fas fa-user-plus"></i> Add Appointment</h5>
+          <h5><i className="fas fa-user-plus"></i> Check-In</h5>
         </button>
         
         <div className={"container " + (this.props.formDisplay ? '' : 'hidden')}>
@@ -78,14 +93,12 @@ class AddApointment extends Component {
                   </div>
 
                   <div className="form-group form-row justify-content-center">
-                    <label className="col-form-label">Date:</label>
-                    <div className="col-md-3 col-sm-4">
-                      <input onChange={this.handleChanges} type="date" className="form-control" placeholder="" name="aptDate" id="aptDate"></input>
-                    </div>
-                    <label className="col-form-label">Time: </label>
-                    <div className="col-md-3 col-sm-4">
-                      <input onChange={this.handleChanges} type="time" className="form-control" name="aptTime" id="aptTime"></input>
-                    </div>
+                    <label className="col-form-label">Be there in:</label>
+                    <select className="form-control" id="time-selector" required>
+                        <option value="15">15 minutes</option>
+                        <option value="30">30 minutes</option>
+                        <option value="45">45 minutes</option>
+                    </select>
                   </div>
 
                   <div className="form-group form-row justify-content-center">
@@ -111,4 +124,4 @@ class AddApointment extends Component {
   }
 }
 
-export default AddApointment;
+export default CheckIn;

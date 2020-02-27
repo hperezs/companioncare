@@ -7,7 +7,7 @@ class ListAppointments extends Component {
     return (
       <article className="list-appointments-layout py-3 ">
         <button className={"btn btn-primary btn-lg " + (this.props.listDisplay ? 'hidden' : '')} onClick={this.props.toggleList}>
-          <h5><i className="far fa-address-book"></i>  See Appointments  </h5>
+          <h5><i className="far fa-address-book"></i>  See Check-In's  </h5>
         </button>
 
         <section className={"container card-header " + (this.props.listDisplay ? '' : 'hidden')}>
@@ -29,22 +29,23 @@ class ListAppointments extends Component {
 
                     <div className="apt-head d-flex">
                       <h6 className="pet-name">{item.petName}</h6>
-                      <span className="apt-date ml-auto">
+                      <span className="apt-date ml-auto font-italic">
                         <Moment
                           date={item.aptDate}
                           parse="YYYY-MM-dd hh:mm"
                           format="MMM-D h:mma"
+                          add={item.timeOffset ? {minutes: 15} : {minutes: 0}} 
                         />
                       </span>
                     </div>
                     
                     <div className="owner-name">
-                      <span className="label-item">Owner: </span>
+                      <span className="label-item text-secondary">Owner: </span>
                       <span>{item.ownerName}</span>
                     </div>
 
                     <div>
-                      <span className="label-item">Notes: </span>
+                      <span className="label-item text-secondary">Notes: </span>
                       <span>{item.aptNotes}</span>
                     </div>
                   </div>
