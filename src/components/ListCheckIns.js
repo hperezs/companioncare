@@ -29,11 +29,11 @@ class ListAppointments extends Component {
 
                     <div className="apt-head d-flex">
                       <h6 className="pet-name">{item.petName}</h6>
-                      <span className="apt-date ml-auto font-italic">
+                      <span className="apt-date ml-auto font-italic"> {console.log(item.petName + "'s date: " + item.aptDate)}
                         <Moment
                           date={item.aptDate}
-                          parse="YYYY-MM-dd hh:mm"
-                          format="MMM-D h:mma"
+                          parse="YYYY-MM-DD hh:mm"
+                          format="MMM-Do h:mma"
                           add={item.timeOffset ? {minutes: 15} : {minutes: 0}} 
                         />
                       </span>

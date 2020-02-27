@@ -22,7 +22,6 @@ class CheckIn extends Component {
     const name = target.name;
 
     const offset = $('#time-selector :selected').val();
-    console.log(offset);
 
     this.setState({
       [name]: value,
@@ -42,6 +41,7 @@ class CheckIn extends Component {
 
     var date = new Date();
     let current_time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + date.getMinutes();
+    console.log(current_time);
 
     let temp_apt = {
       petName: this.state.petName,
