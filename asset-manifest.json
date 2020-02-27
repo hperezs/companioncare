@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/companioncare/static/css/main.f6e49b18.chunk.css",
-    "main.js": "/companioncare/static/js/main.de1c81dc.chunk.js",
-    "main.js.map": "/companioncare/static/js/main.de1c81dc.chunk.js.map",
+    "main.js": "/companioncare/static/js/main.e95a03d3.chunk.js",
+    "main.js.map": "/companioncare/static/js/main.e95a03d3.chunk.js.map",
     "runtime-main.js": "/companioncare/static/js/runtime-main.ed475a3c.js",
     "runtime-main.js.map": "/companioncare/static/js/runtime-main.ed475a3c.js.map",
     "static/css/2.67123b20.chunk.css": "/companioncare/static/css/2.67123b20.chunk.css",
     "static/js/2.592d53eb.chunk.js": "/companioncare/static/js/2.592d53eb.chunk.js",
     "static/js/2.592d53eb.chunk.js.map": "/companioncare/static/js/2.592d53eb.chunk.js.map",
     "index.html": "/companioncare/index.html",
-    "precache-manifest.b5be28270acd97709407b303283f7cc8.js": "/companioncare/precache-manifest.b5be28270acd97709407b303283f7cc8.js",
+    "precache-manifest.7e9ddb6093c0fa0dc33fbf2acea8b525.js": "/companioncare/precache-manifest.7e9ddb6093c0fa0dc33fbf2acea8b525.js",
     "service-worker.js": "/companioncare/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/companioncare/static/css/2.67123b20.chunk.css.map",
     "static/css/main.f6e49b18.chunk.css.map": "/companioncare/static/css/main.f6e49b18.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.67123b20.chunk.css",
     "static/js/2.592d53eb.chunk.js",
     "static/css/main.f6e49b18.chunk.css",
-    "static/js/main.de1c81dc.chunk.js"
+    "static/js/main.e95a03d3.chunk.js"
   ]
 }
