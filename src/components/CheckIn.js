@@ -94,7 +94,7 @@ class CheckIn extends Component {
 
                   <div className="form-group form-row justify-content-center">
                     <label className="col-form-label">Be there in:</label>
-                    <select className="form-control" id="time-selector" required>
+                    <select className="form-control col-md-3 col-sm-5" id="time-selector" required>
                         <option value="15">15 minutes</option>
                         <option value="30">30 minutes</option>
                         <option value="45">45 minutes</option>
